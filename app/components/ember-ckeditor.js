@@ -1,0 +1,1 @@
+export { default } from 'ember-ckeditor/components/ember-ckeditor';
