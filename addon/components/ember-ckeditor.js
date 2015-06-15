@@ -6,10 +6,14 @@ export default Ember.Component.extend({
   layout: layout,
 
   _editor: null,
+  'on-change': null,
 
   didInsertElement() {
     let textarea = this.element.querySelector('.editor');
-    this._editor = CKEDITOR.replace(textarea);
+    let editor = this._editor = CKEDITOR.replace(textarea);
+    editor.on('change', (e) => {
+      this.sendAction('on-change', e.editor.getData());
+    });
   },
 
   willDestroyElement() {
