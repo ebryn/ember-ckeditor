@@ -1,7 +1,7 @@
 {
   "name": "ember-ckeditor",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Exposes CKEditor via friendly Ember Components",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,14 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebryn/ember-ckeditor.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Erik Bryn",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
@@ -39,7 +42,6 @@
   ],
   "dependencies": {
     "broccoli-funnel": "^0.2.3",
-    "broccoli-merge-trees": "^0.2.1",
     "ember-cli-babel": "^5.0.0",
     "ember-cli-htmlbars": "^0.7.9"
   },
