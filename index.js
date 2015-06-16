@@ -9,6 +9,7 @@ module.exports = {
     this._super.included(app);
 
     app.import(app.bowerDirectory + '/ckeditor/ckeditor.js');
+    app.import(app.bowerDirectory + '/ckeditor/adapters/jquery.js');
   },
 
   contentFor: function(type, config) {
