@@ -12,6 +12,8 @@ export default Ember.Component.extend({
     let textarea = this.element.querySelector('.editor');
     let editor = this._editor = CKEDITOR.replace(textarea);
     editor.on('change', (e) => {
+      var data = e.editor.getData()
+      this.set('value', data);
       this.sendAction('on-change', e.editor.getData());
     });
   },
